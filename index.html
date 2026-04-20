@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -16,6 +17,11 @@
       <div class="masthead-top">
         <span class="masthead-vol">Vol. 01 — Issue #01</span>
         <span class="masthead-date">BCN / 2026 &nbsp;·&nbsp; DAM Student</span>
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="setLang('ca')">CA</button>
+          <button class="lang-btn active" onclick="setLang('es')">ES</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+        </div>
       </div>
     </div>
     <div class="masthead-tagline">★ &nbsp; Técnico en Desarrollo de Aplicaciones Multiplataforma &nbsp; ★ &nbsp; Software Developer &nbsp; ★ &nbsp; Open to Work &nbsp; ★</div>
@@ -32,10 +38,8 @@
         </div>
         <div class="hero-info-col">
           <h2 class="hero-name-big">Daniel Mestre</h2>
-          <p class="hero-bio">
-            Desarrollador de software especializado en la creación y el mantenimiento de aplicaciones web y móviles.
-            Experiencia en desarrollo para Android, programación de servicios con TypeScript y gestión de bases de datos.
-            Disfruto buscando soluciones creativas a retos técnicos que me ayuden a aprender cosas nuevas.
+          <p class="hero-bio" data-ca="Desenvolupador de programari especialitzat en la creació i el manteniment d'aplicacions web i mòbils. Experiència en desenvolupament per a Android, programació de serveis amb TypeScript i gestió de bases de dades. M'agrada enfrontar-me a reptes tècnics i treballar en equip per transformar idees en solucions creatives, escalables i eficients." data-es="Desarrollador de software especializado en la creación y el mantenimiento de aplicaciones web y móviles. Experiencia en desarrollo para Android, programación de servicios con TypeScript y gestión de bases de datos. Disfruto enfrentándome a desafíos técnicos y trabajando en equipo para transformar ideas en soluciones creativas, escalables y eficientes." data-en="Software developer specialized in building and maintaining web and mobile applications. Experience in Android development, TypeScript backend services and database management. I enjoy tackling technical challenges and working in teams to turn ideas into creative, scalable and efficient solutions.">
+            Desarrollador de software especializado en la creación y el mantenimiento de aplicaciones web y móviles. Experiencia en desarrollo para Android, programación de servicios con TypeScript y gestión de bases de datos. Disfruto enfrentándome a desafíos técnicos y trabajando en equipo para transformar ideas en soluciones creativas, escalables y eficientes.
           </p>
           <div class="hero-links">
             <a class="hero-link" href="https://github.com/danielmestre2323" target="_blank" rel="noopener">
@@ -54,8 +58,8 @@
     <div class="section-header">
       <div class="section-number">01</div>
       <div class="section-title-wrap">
-        <span class="section-label">Trabajo</span>
-        <h2 class="section-title">Proyectos</h2>
+        <span class="section-label" data-ca="Feina" data-es="Trabajo" data-en="Work">Trabajo</span>
+        <h2 class="section-title" data-ca="Projectes" data-es="Proyectos" data-en="Projects">Proyectos</h2>
       </div>
     </div>
 
@@ -68,12 +72,12 @@
         </div>
         <div class="project-body">
           <p class="project-name">Trivia</p>
-          <p class="project-desc">
+          <p class="project-desc" data-ca="Recreació completa del clàssic joc de preguntes i respostes per a Android. Múltiples categories temàtiques, sistema de puntuació acumulativa, temporitzador per pregunta i pantalla de resultats amb rànquing local." data-es="Recreación completa del clásico juego de preguntas y respuestas para Android. Múltiples categorías temáticas, sistema de puntuación acumulativa, temporizador por pregunta y pantalla de resultados con ranking local." data-en="Full recreation of the classic quiz game for Android. Multiple themed categories, cumulative scoring system, per-question timer and results screen with local ranking.">
             Recreación completa del clásico juego de preguntas y respuestas para Android. Múltiples categorías temáticas, sistema de puntuación acumulativa, temporizador por pregunta y pantalla de resultados con ranking local.
           </p>
           <a class="project-github" href="https://github.com/ITEC-BCN/trivial-app-danielmestre2323" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            Ver en GitHub
+            <span data-ca="Veure a GitHub" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</span>
           </a>
           <div class="project-tags">
             <span class="tag tag-android">Android Studio</span>
@@ -89,12 +93,12 @@
         </div>
         <div class="project-body">
           <p class="project-name">Teelab</p>
-          <p class="project-desc">
+          <p class="project-desc" data-ca="Botiga online de samarretes amb catàleg de productes, cistella de compra i gestió de comandes. Backend amb Node.js, autenticació d'usuaris amb sessions i panell d'administració per gestionar l'inventari en temps real." data-es="Tienda online de camisetas con catálogo de productos, carrito de compra y gestión de pedidos. Backend con Node.js, autenticación de usuarios con sesiones y panel de administración para gestionar el inventario en tiempo real." data-en="Online t-shirt store with product catalogue, shopping cart and order management. Node.js backend, session-based user authentication and admin panel for real-time inventory management.">
             Tienda online de camisetas con catálogo de productos, carrito de compra y gestión de pedidos. Backend con Node.js, autenticación de usuarios con sesiones y panel de administración para gestionar el inventario en tiempo real.
           </p>
           <a class="project-github" href="https://github.com/danielmestre2323/Pr03---TeeLab-FullStack" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            Ver en GitHub
+            <span data-ca="Veure a GitHub" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</span>
           </a>
           <div class="project-tags">
             <span class="tag tag-js">JavaScript</span>
@@ -112,12 +116,12 @@
         </div>
         <div class="project-body">
           <p class="project-name">AoT archive</p>
-          <p class="project-desc">
+          <p class="project-desc" data-ca="Arxiu de tots els personatges de l'anime Attack on Titan i les seves dades. Connexió amb una API externa, cerca a la base de dades, pestanya de favorits i ajustos personalitzats." data-es="Archivo de todos los personajes del anime Attack on titan y sus datos. Conexion con una Api externa, busqueda en la base de datos, pestaña de favoritos y ajustes personalizados." data-en="Archive of all Attack on Titan anime characters and their data. Connection to an external API, database search, favourites tab and custom settings.">
             Archivo de todos los personajes del anime Attack on titan y sus datos. Conexion con una Api externa, busqueda en la base de datos, pestaña de favoritos y ajustes personalizados.
           </p>
           <a class="project-github" href="https://github.com/ITEC-BCN/api-list-app-danielmestre2323" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            Ver en GitHub
+            <span data-ca="Veure a GitHub" data-es="Ver en GitHub" data-en="View on GitHub">Ver en GitHub</span>
           </a>
           <div class="project-tags">
             <span class="tag tag-android">Android Studio</span>
@@ -131,14 +135,14 @@
     <div class="section-header">
       <div class="section-number">02</div>
       <div class="section-title-wrap">
-        <span class="section-label">Trayectoria</span>
-        <h2 class="section-title">Formación</h2>
+        <span class="section-label" data-ca="Trajectòria" data-es="Trayectoria" data-en="Background">Trayectoria</span>
+        <h2 class="section-title" data-ca="Formació" data-es="Formación" data-en="Education">Formación</h2>
       </div>
     </div>
 
     <div class="education-grid">
       <div class="education-sidebar">
-        <span class="edu-sidebar-text">FORMACIÓN ACADÉMICA</span>
+        <span class="edu-sidebar-text" data-ca="FORMACIÓ ACADÈMICA" data-es="FORMACIÓN ACADÉMICA" data-en="ACADEMIC BACKGROUND">FORMACIÓN ACADÉMICA</span>
       </div>
       <div class="education-content">
         <div class="timeline">
@@ -148,16 +152,16 @@
             <div class="timeline-dot-line"><div class="timeline-dot"></div></div>
             <div>
               <p class="timeline-institution">Institut Vila de Gràcia</p>
-              <p class="timeline-degree">Bachillerato de Ciencias y Tecnología</p>
+              <p class="timeline-degree" data-ca="Batxillerat de Ciències i Tecnologia" data-es="Bachillerato de Ciencias y Tecnología" data-en="Science and Technology Baccalaureate">Bachillerato de Ciencias y Tecnología</p>
             </div>
           </div>
 
           <div class="timeline-item">
-            <p class="timeline-period">2025 – Actualmente</p>
+            <p class="timeline-period" data-ca="2025 – Actualment" data-es="2025 – Actualmente" data-en="2025 – Present">2025 – Actualmente</p>
             <div class="timeline-dot-line"><div class="timeline-dot"></div></div>
             <div>
               <p class="timeline-institution">Institut Tecnològic de Barcelona</p>
-              <p class="timeline-degree">Grado superior en desarrollo de aplicaciones multiplataforma</p>
+              <p class="timeline-degree" data-ca="Grau superior en desenvolupament d'aplicacions multiplataforma" data-es="Grado superior en desarrollo de aplicaciones multiplataforma" data-en="Higher degree in multiplatform application development">Grado superior en desarrollo de aplicaciones multiplataforma</p>
             </div>
           </div>
 
@@ -168,8 +172,8 @@
     <div class="section-header">
       <div class="section-number">03</div>
       <div class="section-title-wrap">
-        <span class="section-label">Comunicación</span>
-        <h2 class="section-title">Idiomas</h2>
+        <span class="section-label" data-ca="Comunicació" data-es="Comunicación" data-en="Communication">Comunicación</span>
+        <h2 class="section-title" data-ca="Idiomes" data-es="Idiomas" data-en="Languages">Idiomas</h2>
       </div>
     </div>
 
@@ -178,19 +182,19 @@
       <div class="languages-content">
 
         <div class="lang-row">
-          <span class="lang-name">Catalán</span>
-          <span class="lang-level">Nativo</span>
+          <span class="lang-name" data-ca="Català" data-es="Catalán" data-en="Catalan">Catalán</span>
+          <span class="lang-level" data-ca="Natiu" data-es="Nativo" data-en="Native">Nativo</span>
           <div class="lang-bar-bg"><div class="lang-bar-fill bar-native"></div></div>
         </div>
 
         <div class="lang-row">
-          <span class="lang-name">Castellano</span>
-          <span class="lang-level">Nativo</span>
+          <span class="lang-name" data-ca="Castellà" data-es="Castellano" data-en="Spanish">Castellano</span>
+          <span class="lang-level" data-ca="Natiu" data-es="Nativo" data-en="Native">Nativo</span>
           <div class="lang-bar-bg"><div class="lang-bar-fill bar-native"></div></div>
         </div>
 
         <div class="lang-row">
-          <span class="lang-name">Inglés</span>
+          <span class="lang-name" data-ca="Anglès" data-es="Inglés" data-en="English">Inglés</span>
           <span class="lang-level">C1</span>
           <div class="lang-bar-bg"><div class="lang-bar-fill bar-c1"></div></div>
         </div>
@@ -203,8 +207,8 @@
   <footer>
     <div class="footer-inner">
       <div>
-        <p class="footer-cta">¿Tienes un proyecto?</p>
-        <p class="footer-sub">Estoy disponible para prácticas y posiciones junior. Escríbeme sin compromiso y hablamos.</p>
+        <p class="footer-cta" data-ca="Tens un projecte?" data-es="¿Tienes un proyecto?" data-en="Got a project?">¿Tienes un proyecto?</p>
+        <p class="footer-sub" data-ca="Estic disponible per a pràctiques i posicions junior. Escriu-me sense compromís i parlem." data-es="Estoy disponible para prácticas y posiciones junior. Escríbeme sin compromiso y hablamos." data-en="I'm available for internships and junior positions. Drop me a message with no strings attached.">Estoy disponible para prácticas y posiciones junior. Escríbeme sin compromiso y hablamos.</p>
       </div>
       <div class="footer-right">
         <a class="footer-mail" href="mailto:dani5039m@gmail.com">dani5039m@gmail.com</a>
