@@ -663,6 +663,31 @@ footer::before {
   text-transform: uppercase;
 }
 
+/* Language */
+
+.lang-switcher {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 0 16px;
+  border-left: 2px solid var(--ink);
+}
+.lang-btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1.5px solid transparent;
+  color: var(--muted);
+  padding: 2px 7px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.lang-btn:hover { color: var(--ink); border-color: var(--ink); }
+.lang-btn.active { color: var(--ink); border-color: var(--ink); background: var(--yellow); }
+
 /* ══════════════════════════════════
    ANIMATIONS
 ══════════════════════════════════ */
